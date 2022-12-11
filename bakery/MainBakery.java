@@ -21,13 +21,13 @@ public class MainBakery {
         System.out.println("First bakery: " + pastryInterface.cook(cookies));
         System.out.println("First bakery: " + pastryInterface.cook(pie));
 
-        List<String> breadIngredientGarlic = pastryInterface.addGarlic(breadIngredients);
-        List<String> cookiesIngredientGarlic = (pastryInterface.addGarlic(cookiesIngredients));
-        List<String> pieIngredientGarlic = (pastryInterface.addGarlic(pieIngredients));
+        List<String> breadIngredientsGarlic = pastryInterface.addGarlic(breadIngredients);
+        List<String> cookiesIngredientsGarlic = (pastryInterface.addGarlic(cookiesIngredients));
+        List<String> pieIngredientsGarlic = (pastryInterface.addGarlic(pieIngredients));
 
-        Pastry breadGarlic = new Pastry("bread", breadIngredientGarlic);
-        Pastry cookiesGarlic = new Pastry("cookies", cookiesIngredientGarlic);
-        Pastry pieGarlic = new Pastry("pie", pieIngredientGarlic);
+        Pastry breadGarlic = new Pastry("bread", breadIngredientsGarlic);
+        Pastry cookiesGarlic = new Pastry("cookies", cookiesIngredientsGarlic);
+        Pastry pieGarlic = new Pastry("pie", pieIngredientsGarlic);
         System.out.println("Second bakery: " + pastryInterface.cook(breadGarlic));
         System.out.println("Second bakery: " + pastryInterface.cook(cookiesGarlic));
         System.out.println("Second bakery: " + pastryInterface.cook(pieGarlic));
