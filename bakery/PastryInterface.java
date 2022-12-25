@@ -4,10 +4,10 @@ import java.util.List;
 import java.util.Map;
 
 public interface PastryInterface {
-
-    Map<String, List<String>> cook (Pastry pastryName);
-
-    List<String> addGarlic(List<String> ingredients);
+     void cookBread(Map<String, List<String>> pastry);
+     void cookCookies(Map<String, List<String>> pastry);
+     void cookPie(Map<String, List<String>> pastry);
+     void printIngredients(Pastry pastry);
 
 }
 
