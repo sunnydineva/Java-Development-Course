@@ -1,4 +1,4 @@
-import stringManipulator.StringManipulatorInterface;
+import advanceacademyoop.stringManipulator.StringManipulatorInterface;
 
 import java.util.Arrays;
 import java.util.List;
