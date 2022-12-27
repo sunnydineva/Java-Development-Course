@@ -19,4 +19,15 @@ public class Adult extends Person{
     public void setHobby(String hobby) {
         this.hobby = hobby;
     }
+
+    @Override
+    void tellAddress(Person person) {
+        Map<String, List<Street>> addresses = person.getAddresses();
+        for (Map.Entry<String, List<Street>> address : addresses.entrySet()) {
+            System.out.println("In " + address.getKey());
+            for (Street street : address.getValue()) {
+                System.out.println(street);
+            }
+        }
+    }
 }

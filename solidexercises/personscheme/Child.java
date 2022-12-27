@@ -19,4 +19,9 @@ public class Child extends Person {
     public void setFavoriteColor(String favoriteColor) {
         this.favoriteColor = favoriteColor;
     }
+
+    @Override
+    void tellAddress(Person person) {
+        System.out.println("I won't tell my address");
+    }
 }

@@ -2,8 +2,6 @@ package homeworksanddogs;
 
 public interface TeacherActions {
 
-    void introduce();
-
-    void askForHoHW();
+    void askForHoHW(Subject subject, Student student, boolean isWritten);
 
 }

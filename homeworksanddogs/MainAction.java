@@ -1,7 +1,5 @@
 package homeworksanddogs;
 
 public interface MainAction {
-
-    void introduce();
-
+    void introduce(Person person);
 }

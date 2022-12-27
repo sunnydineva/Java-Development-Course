@@ -3,7 +3,7 @@ package solidexercises.personscheme;
 import java.util.List;
 import java.util.Map;
 
-public class Person {
+public abstract class Person {
     private String name;
     private int age;
     private Map<String, List<Street>> addresses;
@@ -13,6 +13,11 @@ public class Person {
         this.age = age;
         this.addresses = addresses;
     }
+
+    public void describePerson(Person person) {
+        System.out.println("I'm " + person.getName() + ", I'm " + person.getAge() + "-years old");
+    }
+    abstract void tellAddress(Person person);
 
     public String getName() {
         return name;
