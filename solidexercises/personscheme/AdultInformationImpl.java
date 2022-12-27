@@ -11,9 +11,9 @@ public class AdultInformationImpl implements AdultInformation {
         Random random = new Random();
         boolean isWorking = random.nextBoolean();
         if (isWorking) {
-            System.out.println(child.getName() + "is working.");
+            System.out.println(child.getName() + " is working.");
         } else {
-            System.out.println(child.getName() + "is not working.");
+            System.out.println(child.getName() + " is not working.");
         }
     }
 }
