@@ -24,8 +24,4 @@ public class Pie extends Pastry {
     public Map<String, List<String>> getPieRecipe() {
         return pieRecipe;
     }
-
-    public void setPieRecipe(Map<String, List<String>> pieRecipe) {
-        this.pieRecipe = pieRecipe;
-    }
 }

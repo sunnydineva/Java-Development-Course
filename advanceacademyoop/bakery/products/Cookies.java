@@ -22,8 +22,4 @@ public class Cookies extends Pastry {
     public Map<String, List<String>> getCookiesRecipe() {
         return cookiesRecipe;
     }
-
-    public void setCookiesRecipe(Map<String, List<String>> cookiesRecipe) {
-        this.cookiesRecipe = cookiesRecipe;
-    }
 }

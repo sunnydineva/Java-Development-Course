@@ -23,8 +23,4 @@ public class Bread extends Pastry {
     public Map<String, List<String>> getBreadRecipe() {
         return breadRecipe;
     }
-
-    public void setBreadRecipe(Map<String, List<String>> breadRecipe) {
-        this.breadRecipe = breadRecipe;
-    }
 }

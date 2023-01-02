@@ -2,6 +2,7 @@ import advanceacademyoop.stringManipulator.StringManipulatorInterface;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -20,5 +21,18 @@ public class Main {
                 .filter(e-> e.length() > 1)
                 //.forEach(e-> System.out.println(e))
                 .collect(Collectors.toList());
+
+
+        Scanner scanner = new Scanner(System.in);
+
+        int myInt = Integer.parseInt(scanner.nextLine());
+        double myDouble2 = Double.parseDouble(scanner.nextLine());
+        String myString = scanner.nextLine();
+
+        System.out.println("String: " + myString);
+        System.out.println("Double: " + myDouble2);
+        System.out.println("Int: " + myInt);
+
+
     }
 }
