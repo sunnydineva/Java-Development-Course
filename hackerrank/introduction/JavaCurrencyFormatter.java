@@ -16,6 +16,7 @@ public class JavaCurrencyFormatter {
     //China: ￥12,324.13
     //France: 12 324,13 €
 //Note: India does not have a built-in Locale, so you must construct one where the language is en (i.e., English).
+    //run under Java 8 to work
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

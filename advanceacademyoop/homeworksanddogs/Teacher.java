@@ -9,4 +9,17 @@ public class Teacher extends Person {
         super(name, age);
         this.subjects = subjects;
     }
+
+    public List<Subject> getSubjects() {
+        return subjects;
+    }
+
+    public void setSubjects(List<Subject> subjects) {
+        this.subjects = subjects;
+    }
+
+    @Override
+    public void introduce() {
+        System.out.println("Good day, students. I am your teacher " + super.getName() + ".");
+    }
 }

@@ -1,47 +1,41 @@
 package advanceacademyoop.homeworksanddogs;
 
 public class Dog {
-    private String dogName;
-    private String dogBreed;
-    private boolean canEatHomework;
-    private Student dogOwner;
-
-    public Dog(String dogName, String dogBreed, boolean canEatHomework, Student dogOwner) {
-        this.dogName = dogName;
-        this.dogBreed = dogBreed;
-        this.canEatHomework = canEatHomework;
-        this.dogOwner = dogOwner;
+    private String name;
+    private String breed;
+    private Student owner;
+    public Dog(String dogName, String dogBreed, Student dogOwner) {
+        this.name = dogName;
+        this.breed = dogBreed;
+        this.owner = dogOwner;
     }
 
-    public String getDogName() {
-        return dogName;
+    public String getName() {
+        return name;
     }
 
-    public void setDogName(String dogName) {
-        this.dogName = dogName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getDogBreed() {
-        return dogBreed;
+    public String getBreed() {
+        return breed;
     }
 
-    public void setDogBreed(String dogBreed) {
-        this.dogBreed = dogBreed;
+    public void setBreed(String breed) {
+        this.breed = breed;
     }
 
-    public boolean isCanEatHomework() {
-        return canEatHomework;
+    public Student getOwner() {
+        return owner;
     }
 
-    public void setCanEatHomework(boolean canEatHomework) {
-        this.canEatHomework = canEatHomework;
+    public void setOwner(Student owner) {
+        this.owner = owner;
     }
 
-    public Student getDogOwner() {
-        return dogOwner;
-    }
-
-    public void setDogOwner(Student dogOwner) {
-        this.dogOwner = dogOwner;
+    public void confess(){
+        System.out.println("Bow-wow! It was me - " + getName() + "." +
+                " I ate the "+ this.owner.getName() + "'s homework" + ".");
     }
 }

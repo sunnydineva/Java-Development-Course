@@ -1,7 +1,9 @@
 package advanceacademyoop.homeworksanddogs;
 
+import java.util.List;
+
 public interface TeacherActions {
 
-    void askForHoHW(Subject subject, Student student, boolean isWritten);
+    void askForHW(Teacher teacher, List<Student> students, List<Dog> dogs);
 
 }
