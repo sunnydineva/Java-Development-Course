@@ -17,8 +17,5 @@ public class L04ReverseArrayOfStrings {
             elements[elements.length - 1 - i] = oldElement;
         }
         System.out.println(String.join(" ", elements));
-
-
-
     }
 }
