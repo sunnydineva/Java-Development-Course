@@ -4,16 +4,16 @@ import java.util.Scanner;
 
 public class L0804FishingBoat {
     public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
 
-    //Тони и приятели много обичали да ходят за риба, те са толкова запалени по риболова, че решават да отидат
-    // на риболов с кораб. Цената за наема на кораба зависи от сезона и броя рибари.
+        Scanner scanner = new Scanner(System.in);
+
+        //Тони и приятели много обичали да ходят за риба, те са толкова запалени по риболова, че решават да отидат
+        // на риболов с кораб. Цената за наема на кораба зависи от сезона и броя рибари.
 
         int budget = Integer.parseInt(scanner.nextLine());         //• Бюджет на групата – цяло число в интервала [1…8000]
         String season = scanner.nextLine();         //• Сезон – текст : "Spring", "Summer", "Autumn", "Winter"
         int fishermenCount = Integer.parseInt(scanner.nextLine());         //• Брой рибари – цяло число в интервала [4…18]
-
-       double boatRent = 0;
+        double boatRent = 0;
 
         switch (season) {
             case "Spring":
@@ -59,15 +59,14 @@ public class L0804FishingBoat {
                 }
                 break;
         }
-            if (season.equals("Spring") || season.equals("Summer") || season.equals("Winter")) {
-                //Рибарите ползват допълнително 5% отстъпка ако са четен брой освен ако не е есен - тогава нямат допълнителна отстъпка.
-                boolean isEven = fishermenCount % 2 == 0;
-                if ( isEven) {
+        if (season.equals("Spring") || season.equals("Summer") || season.equals("Winter")) {
+            //Рибарите ползват допълнително 5% отстъпка ако са четен брой освен ако не е есен - тогава нямат допълнителна отстъпка.
+            boolean isEven = fishermenCount % 2 == 0;
+            if (isEven) {
                 boatRent = boatRent - boatRent * 0.05;
-                }
             }
-       //Напишете програма, която да пресмята дали рибарите ще съберат достатъчно пари.
-
+        }
+        //Напишете програма, която да пресмята дали рибарите ще съберат достатъчно пари.
         if (budget >= boatRent) {         //• Ако бюджетът е достатъчен:
             System.out.printf("Yes! You have %.2f leva left.", budget - boatRent);//"Yes! You have {останалите пари} leva left."
         } else {             //• Ако бюджетът НЕ Е достатъчен:

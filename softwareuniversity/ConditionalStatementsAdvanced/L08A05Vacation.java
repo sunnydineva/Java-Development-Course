@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class L08A05Vacation {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
-        double budget = Double.parseDouble(scanner.nextLine());;
+        double budget = Double.parseDouble(scanner.nextLine());
         String season = scanner.nextLine();
-
         String placeType = "";
         String place = "";
         double budgetPercent = 0;
@@ -20,24 +20,27 @@ public class L08A05Vacation {
                 case "Summer": {
                     place = "Alaska";
                     budgetPercent = 65;
-                } break;
+                }
+                break;
                 case "Winter": {
                     place = "Morocco";
                     budgetPercent = 45;
-                } break;
+                }
+                break;
             }
-
         } else if (budget <= 3000) {
             placeType = "Hut";
             switch (season) {
                 case "Summer": {
                     budgetPercent = 80;
                     place = "Alaska";
-                } break;
+                }
+                break;
                 case "Winter": {
                     budgetPercent = 60;
                     place = "Morocco";
-                } break;
+                }
+                break;
             }
         } else {
             placeType = "Hotel";
@@ -55,8 +58,6 @@ public class L08A05Vacation {
         }
         double price = 0;
         price = budget * budgetPercent * 0.01;
-
         System.out.printf("%s - %s - %.2f", place, placeType, price);
     }
-
 }

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class E05HairSalon {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
 // Подстригване (haircut):
@@ -20,9 +21,7 @@ public class E05HairSalon {
         boolean isEnough = false;
 
         while (!input.equals("closed")) {
-
             String service = input;
-
             if (service.equals("haircut")) {
                 String typeHaircut = scanner.nextLine();
                 switch (typeHaircut) {
@@ -61,12 +60,8 @@ public class E05HairSalon {
                 isEnough = true;
                 break;
             }
-
-           input = scanner.nextLine();
-
+            input = scanner.nextLine();
         }
-
-
         if (isEnough) {
             System.out.printf("You have reached your target for the day!%n");
             System.out.printf("Earned money: %dlv.", sum);
@@ -74,6 +69,5 @@ public class E05HairSalon {
             System.out.printf("Target not reached! You need %dlv. more.%n", target - sum);
             System.out.printf("Earned money: %dlv.", sum);
         }
-
     }
 }

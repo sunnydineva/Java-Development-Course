@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class L1004CleverLily {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         int age = Integer.parseInt(scanner.nextLine());
@@ -19,9 +20,9 @@ public class L1004CleverLily {
             if (i % 2 == 0) { // Лили има четен рожден ден
                 money = money + 10; // всеки път с 10лв повече
                 allMoney = allMoney + money;
-                brother ++;
+                brother++;
             } else {
-                toysCount ++;
+                toysCount++;
             }
 
         }

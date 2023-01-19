@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class L0711FruitShop {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         String fruit = scanner.nextLine();
         String dayOfWeek = scanner.nextLine();
         double quantity = Double.parseDouble(scanner.nextLine());
-
-//        Напишете програма, която чете от конзолата
-//        плод (banana / apple / orange / grapefruit / kiwi / pineapple / grapes),
-//        ден от седмицата (Monday / Tuesday / Wednesday / Thursday / Friday / Saturday / Sunday) и количество (десетично число) , въведени от потребителя, и пресмята цената според
+//      Напишете програма, която чете от конзолата
+//      плод (banana / apple / orange / grapefruit / kiwi / pineapple / grapes),
+//      ден от седмицата (Monday / Tuesday / Wednesday / Thursday / Friday / Saturday / Sunday) и количество (десетично число) , въведени от потребителя, и пресмята цената според
 
         boolean isWorkingDays = dayOfWeek.equals("Monday") ||
                 dayOfWeek.equals("Tuesday") ||
@@ -42,7 +42,6 @@ public class L0711FruitShop {
             } else {
                 invalid = true;
             }
-
         } else if (isWeekend) {
             if (fruit.equals("banana")) {
                 price = 2.70;
@@ -71,5 +70,4 @@ public class L0711FruitShop {
             System.out.println("error");
         }
     }
-
 }

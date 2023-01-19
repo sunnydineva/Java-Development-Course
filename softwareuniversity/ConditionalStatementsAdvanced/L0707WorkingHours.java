@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class L0707WorkingHours {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         int time = Integer.parseInt(scanner.nextLine());
@@ -20,9 +21,5 @@ public class L0707WorkingHours {
         } else {
             System.out.println("closed");
         }
-
-
     }
-
-
 }

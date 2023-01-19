@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class E02FootballKit {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         double tShirt = Double.parseDouble(scanner.nextLine());
         double target = Double.parseDouble(scanner.nextLine());
-
         double shorts = tShirt * 0.75;
         double socks = shorts * 0.20;
         double spikes = (tShirt + shorts) * 2;
@@ -22,10 +22,6 @@ public class E02FootballKit {
         } else {
             System.out.println("No, he will not earn the world-cup replica ball.");
             System.out.printf("He needs %.2f lv. more.", target - total);
-
         }
-
-
-
     }
 }

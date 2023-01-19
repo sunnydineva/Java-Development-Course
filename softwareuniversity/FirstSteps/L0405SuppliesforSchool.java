@@ -1,6 +1,9 @@
+package softwareuniversity.FirstSteps;
+
 import java.util.Scanner;
 public class L0405SuppliesforSchool {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
 
         int pens = Integer.parseInt(scan.nextLine());

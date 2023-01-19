@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class L0709FruitorVegetable {
     public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
 
-    String product = scanner.nextLine();
+        Scanner scanner = new Scanner(System.in);
+
+        String product = scanner.nextLine();
 
         switch (product) {
             case "banana":
@@ -27,7 +28,5 @@ public class L0709FruitorVegetable {
                 System.out.println("unknown");
                 break;
         }
-
-
     }
 }

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class L10A08EqualPairs {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         int n = Integer.parseInt(scanner.nextLine());
@@ -16,27 +17,19 @@ public class L10A08EqualPairs {
         int maxDiff = 0;
 
         for (int i = 1; i <= n * 2; i++) {
-
             int input = Integer.parseInt(scanner.nextLine());
-
             if (n == 1) {
-
                 if (i % 2 == 0) {
                     b = input;
                     sum = a + b;
                     value = sum;
                     isEqual = true;
                     toCompare = sum;
-
                 } else {
                     a = input;
                 }
-
-
             } else
-
-
-            if (i % 2 == 0) {
+                if (i % 2 == 0) {
                 b = input;
                 sum = a + b;
                 if (sum == toCompare) {
@@ -49,23 +42,15 @@ public class L10A08EqualPairs {
                 toCompare = sum;
                 a = 0;
                 b = 0;
-
             } else {
                 a = input;
             }
-
         }
-
-
         if (isEqual) {
             System.out.printf("Yes, value=%d", value);
         } else {
             System.out.printf("No, maxdiff=%d", maxDiff);
         }
-
-
     }
-
-
 }
 

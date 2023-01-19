@@ -1,5 +1,4 @@
 package softwareuniversity.JFArrays;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -33,11 +32,9 @@ public class L06EqualArrays {
                 break;
             }
             for (int j = 0; j < array2.length; j++) {
-
                 if (!isEqual) {
                     break;
                 }
-
                 if(i == j) {
                     if (array1[i] == array2[j]) {
                         sum += array1[i];
@@ -48,12 +45,9 @@ public class L06EqualArrays {
                     }
                 }
             }
-
         }
         if (isEqual) {
             System.out.printf("%nArrays are identical. Sum: %d", sum);
         }
-
-
     }
 }

@@ -9,7 +9,6 @@ public class L10A07FootballLeague {
 
         int stadiumCapacity = Integer.parseInt(scanner.nextLine());
         int fans = Integer.parseInt(scanner.nextLine());
-
         int sectorA = 0;
         int sectorB = 0;
         int sectorV = 0;
@@ -17,12 +16,10 @@ public class L10A07FootballLeague {
 
         for (int i = 1; i <= fans; i++) {
             String sector = scanner.nextLine();
-
             switch (sector) {
                 case "A": {
                     sectorA++;
                     break;
-
                 } case "B": {
                     sectorB++;
                     break;
@@ -35,13 +32,10 @@ public class L10A07FootballLeague {
                 }
             }
         }
-
-
         System.out.printf("%.2f%%%n", sectorA * 1.0 / fans * 100);
         System.out.printf("%.2f%%%n", sectorB * 1.0 / fans * 100);
         System.out.printf("%.2f%%%n", sectorV * 1.0 / fans * 100);
         System.out.printf("%.2f%%%n", sectorG * 1.0 / fans * 100);
         System.out.printf("%.2f%%", fans * 1.0 / stadiumCapacity * 100);
     }
-
 }

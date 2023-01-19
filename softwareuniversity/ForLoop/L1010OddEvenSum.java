@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class L1010OddEvenSum {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         int n = Integer.parseInt(scanner.nextLine());
@@ -18,9 +19,7 @@ public class L1010OddEvenSum {
                 sumOdd = sumOdd + number;
             }
         }
-
         int diff = Math.abs(sumEven - sumOdd);
-
         if (sumEven == sumOdd) {
             System.out.println("Yes");
             System.out.printf("Sum = %d", sumEven);
@@ -28,6 +27,5 @@ public class L1010OddEvenSum {
             System.out.println("No");
             System.out.printf("Diff = %d", diff);
         }
-
     }
 }

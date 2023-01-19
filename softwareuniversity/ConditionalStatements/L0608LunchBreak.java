@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class L0608LunchBreak {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 //        8. Обедна почивка
 //        По време на обедната почивка искате да изгледате епизод от своя любим сериал. Вашата задача е да
@@ -13,13 +14,10 @@ public class L0608LunchBreak {
 //        времето за отдих ще бъде 1/4 от времето за почивка.
 
         String nameSerial = scanner.nextLine();
-
         int durationSerial = Integer.parseInt(scanner.nextLine());
         int durationBreak = Integer.parseInt(scanner.nextLine());
-
         double lunchTime = durationBreak / 8.0;
         double relaxTime = durationBreak / 4.0;
-
         double timeLeft = durationBreak - lunchTime - relaxTime;
         double freeTime = 0;
 

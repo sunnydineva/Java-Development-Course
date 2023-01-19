@@ -9,12 +9,10 @@ public class L0706NumberInRange {
 
         int num = Integer.parseInt(scanner.nextLine());
 
-        if (num >= -100 && num <=100 && num !=0) {
+        if (num >= -100 && num <= 100 && num != 0) {
             System.out.println("Yes");
         } else {
             System.out.println("No");
         }
-
     }
-
 }

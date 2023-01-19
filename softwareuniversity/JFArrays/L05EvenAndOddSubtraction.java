@@ -21,7 +21,7 @@ public class L05EvenAndOddSubtraction {
         //We will need a variable for the sum.
         int sumEven = 0;
         int sumOdd = 0;
-//Iterate through all elements in the array with for loop. If the number is even, add it to the sum.
+        //Iterate through all elements in the array with for loop. If the number is even, add it to the sum.
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] % 2 == 0) {
                 sumEven += numbers[i];

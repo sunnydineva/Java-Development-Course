@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class L1007TrekkingMania {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         int groups = Integer.parseInt(scanner.nextLine());
-
         String peak = "";
         int peopleTotal = 0;
         int peopleMusala = 0;
@@ -16,11 +16,9 @@ public class L1007TrekkingMania {
         int peopleK2 = 0;
         int peopleEverest = 0;
 
-
-        for (int i = 1; i <= groups ; i++) {
+        for (int i = 1; i <= groups; i++) {
             int people = Integer.parseInt(scanner.nextLine());
-
-            if (people <=5) {
+            if (people <= 5) {
                 peak = "Musala";
                 peopleTotal = peopleTotal + people;
                 peopleMusala = peopleMusala + people;
@@ -42,13 +40,10 @@ public class L1007TrekkingMania {
                 peopleEverest = peopleEverest + people;
             }
         }
-
         System.out.printf("%.2f%%%n", peopleMusala * 1.0 / peopleTotal * 100);
         System.out.printf("%.2f%%%n", peopleMonblan * 1.0 / peopleTotal * 100);
         System.out.printf("%.2f%%%n", peopleKilimandanjaro * 1.0 / peopleTotal * 100);
         System.out.printf("%.2f%%%n", peopleK2 * 1.0 / peopleTotal * 100);
         System.out.printf("%.2f%%%n", peopleEverest * 1.0 / peopleTotal * 100);
-
     }
-
 }

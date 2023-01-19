@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class L1102Password {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         String username = scanner.nextLine();
@@ -12,10 +13,7 @@ public class L1102Password {
 
         while (!inputData.equals(password)) {
             inputData = scanner.nextLine();
-
         }
         System.out.printf("Welcome %s!%n", username);
-
     }
-
 }

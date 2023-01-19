@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class L0802SummerOutfit {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         int degrees = Integer.parseInt(scanner.nextLine());
@@ -13,22 +14,22 @@ public class L0802SummerOutfit {
 
         switch (dayTime) {
             case "Morning":
-                if (degrees >=10 && degrees <=18) {
+                if (degrees >= 10 && degrees <= 18) {
                     outfit = "Sweatshirt";
                     shoes = "Sneakers";
-                } else if (degrees > 18 && degrees <=24) {
+                } else if (degrees > 18 && degrees <= 24) {
                     outfit = "Shirt";
                     shoes = "Moccasins";
-                } else if (degrees >=25) {
+                } else if (degrees >= 25) {
                     outfit = "T-Shirt";
                     shoes = "Sandals";
                 }
                 break;
             case "Afternoon":
-                if (degrees >= 10 && degrees <=18) {
+                if (degrees >= 10 && degrees <= 18) {
                     outfit = "Shirt";
                     shoes = "Moccasins";
-                } else if (degrees > 18 && degrees <=24) {
+                } else if (degrees > 18 && degrees <= 24) {
                     outfit = "T-Shirt";
                     shoes = "Sandals";
                 } else if (degrees >= 25) {
@@ -49,9 +50,7 @@ public class L0802SummerOutfit {
                     shoes = "Moccasins";
                 }
                 break;
-
         }
-
         System.out.printf("It's %d degrees, get your %s and %s.", degrees, outfit, shoes);
     }
 }

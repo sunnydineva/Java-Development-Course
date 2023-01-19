@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class L12A03StreamOfLetter_B {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
+        Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
 
         boolean isC = false;
@@ -83,13 +83,12 @@ public class L12A03StreamOfLetter_B {
                 input = scanner.nextLine();
 
             } else {
-               input = scanner.nextLine();
+                input = scanner.nextLine();
             }
         }
 
 
-
-       System.out.println(forPrint);
+        System.out.println(forPrint);
     }
 
 }

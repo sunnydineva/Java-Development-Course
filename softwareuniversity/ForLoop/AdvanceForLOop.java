@@ -13,7 +13,4 @@ public class AdvanceForLOop {
         }
         System.out.println(sumEven);
     }
-
-
-
 }

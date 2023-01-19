@@ -14,8 +14,6 @@ public class SolutionEvenAndOddSubtraction {
             if (num % 2 == 0) evenSum += num;
             else oddSum += num;
         }
-//TODO: Find the difference and print it
-
-
+        //TODO: Find the difference and print it
     }
 }

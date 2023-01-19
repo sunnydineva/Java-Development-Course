@@ -8,7 +8,6 @@ public class L1202ExamPreparation {
 
         int maxPoorGrades = Integer.parseInt(scanner.nextLine());
         String command = scanner.nextLine();
-
         double sumGrades = 0;
         int countProblemsSolved = 0;
         int countPoorGrades = 0;
@@ -18,24 +17,18 @@ public class L1202ExamPreparation {
         while (!command.equals("Enough")) {
             String currentProblem = command;
             double grade = Double.parseDouble(scanner.nextLine());
-            countProblemsSolved ++;
+            countProblemsSolved++;
             lastProblem = currentProblem;
-
             if (grade <= 4) {
-                countPoorGrades ++;
+                countPoorGrades++;
             }
-
             sumGrades += grade;
-
             if (countPoorGrades >= maxPoorGrades) {
                 isNeedBreak = true;
                 break;
             }
-
             command = scanner.nextLine();
-
         }
-
         if (isNeedBreak) {
             System.out.printf("You need a break, %d poor grades.%n", countPoorGrades);
         } else {
@@ -43,6 +36,5 @@ public class L1202ExamPreparation {
             System.out.printf("Number of problems: %d%n", countProblemsSolved);
             System.out.printf("Last problem: %s%n", lastProblem);
         }
-
     }
 }
