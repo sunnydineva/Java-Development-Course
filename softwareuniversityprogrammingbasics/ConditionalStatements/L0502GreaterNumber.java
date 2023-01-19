@@ -1,0 +1,19 @@
+package softwareuniversityprogrammingbasics.ConditionalStatements;
+
+import java.util.Scanner;
+
+public class L0502GreaterNumber {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        int num1 = Integer.parseInt(scan.nextLine());
+        int num2 = Integer.parseInt(scan.nextLine());
+
+        if (num1 <= num2) {
+            System.out.println(num2);
+        } else {
+            System.out.println(num1);
+        }
+    }
+}
