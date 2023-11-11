@@ -28,6 +28,6 @@ public class HumanBuilder {
     }
 
     public Human build(){
-        return new Human(this.firstName, this.firstName, this.age, this.job);
+        return new Human(this.firstName, this.lastName, this.age, this.job);
     }
 }
