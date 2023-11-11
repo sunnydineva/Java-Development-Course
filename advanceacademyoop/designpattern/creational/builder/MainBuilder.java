@@ -9,9 +9,7 @@ public class MainBuilder {
         builder.lastName("Petrov");
         builder.age(78);
         builder.job("artist");
-
         Human h8 = builder.build();
-
      */
 
         Human h8 = new HumanBuilder()
